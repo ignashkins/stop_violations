@@ -133,5 +133,10 @@ namespace WindowsFormsApp1
 
             MessageBox.Show("Данные успешно обновлены", "Обновление", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        private void ClaimList_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

@@ -149,6 +149,7 @@
             this.Controls.Add(this.putNewClaim);
             this.Name = "ClaimList";
             this.Text = "Заявления";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ClaimList_FormClosing);
             this.Load += new System.EventHandler(this.ClaimList_Load);
             ((System.ComponentModel.ISupportInitialize)(this.claimListView)).EndInit();
             this.ResumeLayout(false);
